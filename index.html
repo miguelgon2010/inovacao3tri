@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script src="/controller/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica de Estética - Agendamento MVP</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-color: #f4f6f9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        p.subtitle {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        button {
+            background-color: #27ae60;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background-color: #219150;
+        }
+        footer {
+            margin-top: 25px;
+            font-size: 0.8rem;
+            color: #888888;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="card">
+        <h1>Clínica Bella Vita</h1>
+        <p class="subtitle">Agende sua avaliação em poucos segundos</p>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">WhatsApp / Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(41) 99999-9999" required>
+            </div>
+
+            <div class="form-group">
+                <label for="servico">Serviço Desejado:</label>
+                <select id="servico" name="servico">
+                    <option value="limpeza">Limpeza de Pele</option>
+                    <option value="massagem">Massagem Relaxante</option>
+                    <option value="design">Design de Sobrancelhas</option>
+                </select>
+            </div>
+
+            <button type="submit">Solicitar Agendamento</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>MVP de Inovação & Empreendedorismo • Colégio Bento Munhoz</p>
+    </footer>
+
+</body>
+</html>
